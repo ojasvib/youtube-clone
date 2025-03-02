@@ -35,7 +35,7 @@ app.post("/process-video", async (req, res): Promise<any> => {
              deleteRawVideo(inputFileName)
             ]); 
         console.error(error);
-        return res.status(500).send('Internal server errror: processing failed');
+        return res.status(500).send('Internal server error: processing failed');
     }
 
     //Upload the processedVideo
